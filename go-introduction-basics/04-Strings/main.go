@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	// slide 2: rune vs byte
 	s := "élite"
 	fmt.Printf("%8T %[1]v\n", s)
 	fmt.Printf("%8T %[1]v\n", []rune(s))
@@ -44,4 +43,5 @@ func main() {
 	fmt.Println(strings.Index(s, "string")) // 2
 	s = strings.ToUpper(s)                  // "A STRING"
 	fmt.Println(s)
+
 }
