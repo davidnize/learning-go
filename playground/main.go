@@ -3,8 +3,25 @@ package main
 import "fmt"
 
 func main() {
-	var numbers = []int{1, 2, 3, 4, 5}
-	// var names string = ""
-	fmt.Println(numbers, len(numbers))
-	fmt.Printf("name: %T\n", numbers)
+	inventory := map[string]int{
+		"Mouse": 1,
+		"Cable": 3,
+	}
+	inventory["laptop"] = 1
+	inventory["keyboard"] = 1
+
+	inventory["laptop"] += 1
+
+	quantity, ok := inventory["laptop"]
+
+	if ok {
+		fmt.Println("Quantity:", quantity)
+	} else {
+		fmt.Println("Item not found")
+	}
+
+	for item, quantity := range inventory {
+		fmt.Println(item, quantity)
+	}
+
 }
