@@ -1,3 +1,3 @@
-module github.com/davidnize/go-introduction-basics
+module github.com/davidnize/learning-go
 
 go 1.26
