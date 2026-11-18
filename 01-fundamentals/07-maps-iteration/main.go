@@ -17,6 +17,11 @@ func main() {
 			"Addma": 100,
 		},
 	}
+	students["Mike"] = map[string]int{
+		"Math":    100,
+		"Physics": 90,
+	}
+
 	for name, subjects := range students {
 		fmt.Println("student:", name)
 
